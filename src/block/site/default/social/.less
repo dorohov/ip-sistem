@@ -1,0 +1,102 @@
+.social__{
+	&block{}
+	&row{
+		align-items: center;
+		//@media @media-size-xs {
+			margin-left: -(@soc-gutter);
+			margin-right: -(@soc-gutter);
+		//}
+	}
+	&cols{
+		//@media @media-size-xs {
+			padding-left: @soc-gutter;
+			padding-right: @soc-gutter;
+		//}
+	}
+	&item{
+		display: block;
+		transition: @trs-site;
+		position: relative;
+		&[href^="mailto:"], 
+		&[href^="mailto:"]:hover,
+		&[href^="mailto:"]:focus, 
+		&[href^="tel:"], 
+		&[href^="tel:"]:hover,
+		&[href^="tel:"]:focus,
+		&, &:hover, &:focus{color: @soc-color;}
+		&.is--contacts{
+			//@media @media-screen {
+				padding-left: ~"calc(@{soc-size} + 15px)";
+			//}			
+		}
+		&.is--navbar{
+			&, &:hover, &:focus{color: @navbar-color;}
+		}
+	}
+	&icon{
+		width: @soc-size; 
+		height: @soc-size;
+		border-radius: @soc-border-radius;
+		transition: @trs-site;
+		background-color: @soc-bg;
+		border: @soc-border;
+		padding: 0px;
+		@media @media-device {
+			width: @soc-size + 6; 
+			height: @soc-size + 6;
+			padding: 6px;
+		}
+		.social__item:hover &{
+			//background-color: @soc-bg-hover;
+			//color: @soc-color-hover;
+		}
+		.social__item.is--contacts &{
+			color: @soc-color-contacts;
+			//@media @media-screen {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);			
+			//}
+		}
+		.social__item.is--contacts:hover &{
+			color: @soc-color;
+		}
+		.social__item.is--navbar &{
+			@media @media-device {margin-left: auto;}
+			@media @media-screen {display: none;}
+		}
+		.social__item.is--vk:hover &{
+			background-color: @color-vk;				
+			border-color: @color-vk;				
+		}
+		.social__item.is--fb:hover &{
+			background-color: @color-fb;				
+			border-color: @color-fb;				
+		}
+		.social__item.is--inst:hover &{
+			background-color: @color-inst;				
+			border-color: @color-inst;				
+		}
+		.social__item.is--ok:hover &{
+			background-color: @color-ok;				
+			border-color: @color-ok;				
+		}
+		.social__item.is--tw:hover &{
+			background-color: @color-tw;				
+			border-color: @color-tw;				
+		}
+		.social__item.is--skype:hover &{
+			background-color: @color-skype;				
+			border-color: @color-skype;				
+		}
+	}
+	&name{
+		//@media @media-device {display: none;}
+		span{font-weight: 700;}
+		@media @media-screen-lg {
+			font-size: @b-fs + 2;
+			line-height: @b-lh + 2;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.include-custom-font(
+	@family: @din, 
+	@src-name: @din, 
+	@weight: normal, 
+	@style: normal
+	){
+	@font-face{			
+		font-family: "@{family}";			
+		src:	url('@{url-path-fonts}/@{src-name}.woff2') format('woff2'),
+				url('@{url-path-fonts}/@{src-name}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-icon(@family: @icon, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src: url('@{url-path-fonts}/@{family}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+
+.include-custom-font(
+	@family: @din,
+	@src-name: @din-light,
+	@weight: 300, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @din,
+	@src-name: @din,
+	@weight: 400, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @din,
+	@src-name: @din-med,
+	@weight: 500, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @din,
+	@src-name: @din-bold,
+	@weight: 700, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @din,
+	@src-name: @din-ebold,
+	@weight: 800, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @geometria,
+	@src-name: @geometria-bold,
+	@weight: normal, 
+	@style: normal
+	);

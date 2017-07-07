@@ -1,0 +1,16 @@
+<div class="panel {{block_prefix}}item">
+	<a class="{{block_prefix}}heading" data-toggle="collapse" data-parent="#works-collapse" href="#{{block_link}}" aria-expanded="{{block_expanded}}">
+		<span class="{{block_prefix}}icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="owl-next" ]]</span>
+		{{block_heading}}
+	</a>
+	<div id="{{block_link}}" class="{{block_prefix}}item-collapse collapse {{block_mod}}">
+		<div class="text__block {{block_prefix}}text">
+			{{block_note}}
+			[[azbntple 
+				tpl="/src/block/site/default/gallery/block.html" 
+				gallery_prefix="gallery-panel__"
+				gallery_mod="is--text"
+			]]
+		</div>
+	</div>
+</div>

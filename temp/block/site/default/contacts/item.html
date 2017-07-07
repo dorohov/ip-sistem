@@ -1,0 +1,33 @@
+<div class="{{contacts_prefix}}block">	
+	<div class="{{contacts_prefix}}row row  is--wrap  is--gutter">
+		<div class="{{contacts_prefix}}cols cols">	
+			<div class="{{contacts_prefix}}item">
+				<span class="{{contacts_prefix}}item-head">Офис:</span>
+				{{contacts.address}}
+			</div>
+		</div>
+		<div class="{{contacts_prefix}}cols cols">					
+			[[azbntple 
+				tpl="/src/block/site/default/social/item.html" social_prefix="social__"
+				social_href="mailto:kaskad.gidro@gmail.com"
+				social_target="  "
+				social_mode="is--contacts"
+				social_icon="email"
+				social_name="<span>kaskad.gidro</span>@gmail.com"
+			]]
+		</div>
+		<div class="{{contacts_prefix}}cols cols">
+			[[azbntple 
+				tpl="/src/block/site/default/social/item.html" social_prefix="social__"
+				social_href="tel:+78007567899"
+				social_target="  "
+				social_mode="is--contacts"
+				social_icon="tel"
+				social_name="8 (800) <span>756-78-99</span>"
+			]]
+		</div>
+	</div>
+	<div class="{{contacts_prefix}}map">
+		<div class="{{contacts_prefix}}map-item" id="map-kaskad"></div>
+	</div>
+</div>

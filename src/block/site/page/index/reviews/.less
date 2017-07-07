@@ -1,0 +1,25 @@
+.reviews-block__{
+	&panel{			
+		@media @media-device {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}			
+		@media @media-screen {
+			padding-top: 4vw;
+			padding-bottom: 4.7vw;
+		}		
+	}
+	&owl{}
+}
+.reviews-owl__{
+	&item{}
+	&preview{
+		display: block;
+    	margin-bottom: 15px;
+	}
+	&heading{
+		.calcFontSize(18, 28, 320, 1680);
+		.calcLineHeight(20, 30, 320, 1680);
+		color: @blue-dark;
+	}
+}

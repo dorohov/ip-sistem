@@ -1,0 +1,233 @@
+@panel-gutter-device: 35px;
+@panel-gutter-screen: 4vw;
+.dealers-panel__{
+	&block{
+		@media @media-device {
+			padding-top: @panel-gutter-device;
+			padding-bottom: @panel-gutter-device;
+		}
+		@media @media-screen {
+			padding-top: @panel-gutter-screen;
+			padding-bottom: @panel-gutter-screen;
+		}
+	}
+	&row{
+		@media @media-device {justify-content: center;}
+		@media @media-size-xs-l {justify-content: flex-start;}
+		@media @media-screen {justify-content: space-between;}
+	}
+	&cols{
+		@media @media-size-xs-p {
+			.makeCols(6, 12);
+			&:first-child{order: 1}
+		}
+	}
+	&item{
+		img{
+			@media @media-size-xs{
+				max-height: 20px;			
+			}
+		}
+	}
+}
+.advantages-panel__{
+	&block{
+		@media @media-device {
+			padding-top: @panel-gutter-device;
+			padding-bottom: @panel-gutter-device;
+		}
+		@media @media-screen {
+			padding-top: @panel-gutter-screen;
+			padding-bottom: @panel-gutter-screen;
+		}
+	}
+	&row{}
+	&cols{
+		&.is--cols-3{
+			@media @media-size-xs{.makeCols(6, 12);}
+			@media @media-size-xs-l{.makeCols(3, 12);}
+		}
+	}
+	&item{
+		text-align: center;
+	}
+	&preview{
+		color: @yellow;
+		margin: 0 auto 10px;
+		width: 125px;
+		height: 125px;
+		@media @media-size-xs{
+			width: 100px;
+			height: 100px;
+		}
+	}
+	&note{
+		.calcFontSize(18, 22, 320, 1680);
+		.calcLineHeight(20, 24, 320, 1680);
+		@media @media-size-xs{
+			font-size: @b-fs - 4;
+			line-height: @b-lh - 8;
+		}
+		@media @media-device {
+			br {display: none}
+		}
+	}
+}
+.catalog-all-panel__{
+	&block{
+		@media @media-device {
+			padding-top: @panel-gutter-device;
+			padding-bottom: @panel-gutter-device;
+		}
+		@media @media-screen {
+			padding-top: @panel-gutter-screen;
+			padding-bottom: @panel-gutter-screen;
+		}
+	}
+	&inner{
+		background-color: @white8;
+		text-align: center;
+		position: relative;
+		@media @media-device {padding: 40px 30px;}
+		@media @media-screen {padding: 3.3vw;}
+		&::before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			transform: translateY(-50%);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url("@{url-path-img}/default/bg-catalog-all.png");
+			@media @media-screen {
+				max-width: 285px;
+				max-height: 240px;
+				width: 16vw;
+				height: 13vw;
+			}
+		}
+	}
+	&heading{
+		font-weight: 700;
+		position: relative;
+		z-index: 2;
+		.calcFontSize(24, 34, 320, 1680);
+		.calcLineHeight(30, 40, 320, 1680);
+		letter-spacing: 0.5px;
+		@media @media-device {margin-bottom: 25px}
+		@media @media-screen {margin-bottom: 2vw}
+	}
+	&btn{
+		position: relative;
+		z-index: 2;
+	}
+}
+.clients-panel__{
+	&block{
+		@media @media-device {
+			padding-top: @panel-gutter-device;
+			padding-bottom: @panel-gutter-device;
+		}
+		@media @media-screen {
+			padding-top: @panel-gutter-screen;
+			padding-bottom: @panel-gutter-screen;
+		}
+	}
+	&owl-item{
+		position: relative;
+		padding-right: 30px;
+		&::after{
+			content: '';
+			position: absolute;
+			top: 25%;
+			right: 0;
+			bottom: 25%;
+			width: 1px;
+			background-color: @blue;
+			@media @media-size-xs {display: none;}
+		}
+		img{margin: 0 auto}
+	}
+}
+.deliver-panel__{
+	&block{
+		@media @media-device {
+			padding-top: @panel-gutter-device;
+			padding-bottom: @panel-gutter-device;
+		}
+		@media @media-screen {
+			padding-top: @panel-gutter-screen;
+			padding-bottom: @panel-gutter-screen;
+		}
+	}
+	&cols{}
+	&item{
+		position: relative;
+		@media @media-device {
+			padding-left: 40px; 
+		}
+		@media @media-screen {
+			padding-left: 7vw;    
+			margin-top: 25px;
+    		padding-top: 10px;
+		}
+		&::before{
+			content: attr(data-num);
+			position: absolute;
+			z-index: 2;
+			top: 0%;
+			left: 0;
+			//transform: translateY(-40%);
+			color: @blue;
+			font-family: @b-ff-2;
+			@media @media-device {
+				font-size: @b-fs + 32;
+				line-height: @b-lh + 26;
+			}	
+			@media @media-screen {	
+				.calcFontSize(40, 170, 320, 1680);
+				.calcLineHeight(20, 120, 320, 1680);
+			}
+		}
+		&::after{
+			@media @media-screen {				
+				content: '';
+				position: absolute;
+				z-index: 1;
+				top: 0%;
+				left: 0;
+				//transform: translateY(-50%);
+				background-color: @white10;
+				border-radius: 50%;
+				max-width: 112px;
+				max-height: 112px;
+				min-width: 62px;
+				min-height: 62px;
+				width: 7vw;
+				height: 7vw;
+			}
+		}
+	}
+	&heading{
+		color: @blue;
+		font-weight: 700;
+		position: relative;
+		z-index: 3;
+		.calcFontSize(20, 22, 320, 1680);
+		.calcLineHeight(22, 24, 320, 1680);
+		letter-spacing: 0.5px;
+		margin-bottom: 15px
+	}
+	&note{
+		line-height: @b-lh - 4;
+		@media @media-device {
+			font-size: @b-fs - 4;
+			line-height: @b-lh - 6;
+		}
+		@media @media-size-xxl {
+			//max-width: 330px;
+		}
+		p, div, ol, ul, li{margin-bottom: 0}
+	}
+}

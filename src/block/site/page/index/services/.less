@@ -1,0 +1,147 @@
+.services-block__{
+	&panel{			
+		@media @media-device {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}			
+		@media @media-screen {
+			padding-top: 4.2vw;
+			padding-bottom: 4.2vw;
+		}		
+	}
+	&row{
+		@media @media-size-xxl {
+			margin-left: -30px;
+			margin-right: -30px;
+			&.is--gutter{
+				margin-top: -60px;
+				& > .cols{
+					padding-top: 60px;
+				} 
+			}
+		}
+	}
+	&cols{
+		@media @media-size-xxl {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		&.is--cols-4{
+			@media @media-size-xs-l {
+				.makeCols(6, 12);
+			}
+			@media @media-size-sm-p {
+				.makeCols(6, 12);
+			}
+		}
+	}
+}
+.services-item__{	
+	&panel{
+		position: relative;
+		height: 100%;
+		border: 1px solid @yellow;
+		line-height: @b-lh - 2;
+		& > *{
+			margin-bottom: 10px;
+		}
+		@media @media-device {
+			padding: 30px 25px 15px;
+		}
+		@media @media-screen {
+			padding: 3.8vw 2.9vw 2vw;
+		}
+		h4{
+			font-weight: 700;
+			color: @blue-dark;
+			.calcFontSize(20, 28, 320, 1680); 
+			.calcLineHeight(28, 34, 320, 1680);
+			margin-bottom: 5px;
+		}
+		* + h4{
+			padding-top: 20px;
+		}
+	}
+	&item{
+		position: relative;
+	}
+	&preview{
+		display: block;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 15px;
+		&::before{
+			content: attr(data-count);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: fadeout(@white, 40%);
+			.calcFontSize(80, 146, 320, 1680);
+			.calcLineHeight(70, 106, 320, 1680);
+			font-weight: 800;
+			transform: translateX(-25%);
+			transition: @trs-site;
+			.services-item__item.is--hover &{
+				transform: translateX(0);
+			}
+		}
+	}
+	&heading{
+		font-weight: 700;
+		.calcFontSize(24, 34, 320, 1680);
+		.calcLineHeight(28, 38, 320, 1680);
+		letter-spacing: 0.8px;
+		a{
+			&, &:focus{color: @green;}
+			.services-item__item.is--hover &,
+			&:hover{color: @blue;}
+		}
+	}
+	&note{
+		line-height: @b-lh - 2;
+		margin-bottom: 5px;
+	}
+	&row{
+		justify-content: space-between;
+		align-items: center;
+		@media @media-notsmart {
+			margin-bottom: 20px;
+		}
+	}
+	&cols{
+		&.is--text{
+			font-weight: 700;
+			color: @blue-dark;
+			@media @media-size-xxl {
+				.makeCols(6, 12);
+			}
+		}
+		&.is--cost{}
+	}
+	&cost{
+		color: @green;
+		.calcFontSize(22, 28, 320, 1680);
+		.calcLineHeight(24, 30, 320, 1680);
+		padding-right: 25px;
+		letter-spacing: 0.8px;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			transform: translateY(-50%);
+			top: 55%;
+			right: 0;
+			width: 23px;
+			height: 23px;
+			background-image: url("@{url-path-img}/svg/ruble-green.svg");
+			background-position: right bottom;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		span{
+			font-weight: 700;
+			.calcFontSize(32, 38, 320, 1680);
+			.calcLineHeight(34, 40, 320, 1680);
+		}
+	}
+}

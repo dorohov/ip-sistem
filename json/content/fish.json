@@ -1,0 +1,29 @@
+{
+	"contacts":{
+		"name":"IP-Системы",
+		"domain":"ip-sistem.ru",
+		"domain_link":"http://ip-sistem.ru/",
+		"agreement_page":"agreement",
+		"copyright":"Все права защищены",
+		"email":"mail@ip-sistem.ru",
+		"phone":"+7 (4862) <span>63-04-57</span>", 
+		"phone_tel":"+74862630457",
+		"inn":"",
+		"ogrn":"",
+		"index":"302001",
+		"address":"г.&nbsp;Орёл ул.&nbsp;Гагарина, д.&nbsp;23, оф.&nbsp;19а"
+	},
+	"soc":{
+		"vk":"https://vk.com/"
+	},
+	"url-path-css":"/wp-content/themes/azbnbasetheme/css",
+	"url-path-css":"/css",
+	"url-path-img":"/wp-content/themes/azbnbasetheme/img",
+	"url-path-img":"/img",
+	"url-path-js":"/wp-content/themes/azbnbasetheme/js",
+	"url-path-js":"/js",
+	"url-path-plugins":"/wp-content/themes/azbnbasetheme/plugins",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/wp-content/themes/azbnbasetheme/favicon",
+	"url-path-favicon":"/favicon"
+}

@@ -1,0 +1,34 @@
+.pagination-panel__{
+	&block{
+		@media @media-device {padding-top: 35px;}
+		@media @media-screen {padding-top: 3.2vw;}
+	}
+	&list{
+		list-style: none;
+		margin-left: -10px;
+		margin-right: -10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	&item{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	&link{
+		display: block;
+		font-weight: 500;
+		color: @b-color;
+		.pagination-panel__item.is--active &{
+			color: @blue;
+			cursor: default;
+		}
+		.calcFontSize(20, 28, 320, 1680);
+		.calcLineHeight(22, 30, 320, 1680);
+		svg{
+			width: 16px;
+			height: 16px;
+		}
+	}
+}

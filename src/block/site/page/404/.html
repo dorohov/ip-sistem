@@ -1,0 +1,31 @@
+<div class="content-block {{page_prefix}}block" role="main">	
+	<div class="container content-block__container">
+		<div class="text__container">
+			[[azbntple 
+				tpl="/src/block/site/default/breadcrumb/level1.html" 
+				bread_prefix="breadcrumb__"
+				bread_mod="  "
+				level_1="Страница не найдена"
+			]]		
+			[[azbntple 
+				tpl="/src/block/site/default/page-header/heading.html" 
+				header_prefix="page-header__" 
+				header_mod="is--heading"
+				header_level="h1"
+				header="Страница не найдена"
+			]]
+			<div class="text__block">
+				<p>Запрашиваемая Вами страница удалена или никогда не существовала.</p>
+				<p>
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html" 
+						button_mod="is--yellow" 
+						button_prefix="btn__" 
+						button_name="Ha главную"
+						button_link="/#" 
+					]]
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

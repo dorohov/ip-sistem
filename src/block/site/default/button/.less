@@ -1,0 +1,126 @@
+.btn__{
+	&item{
+		display: inline-block;
+		outline: none;
+		background: none;
+		text-decoration: none;
+		transition: @trs-btn;
+		//
+		border-width: 3px;
+		border-style: solid;
+		border-color: @btn-border-color;
+		background-color: fadeout(@btn-bg, 0%); 
+		position: relative;
+		color: @btn-color;
+		border-radius: @btn-border-radius;
+		
+		text-align: center;
+		font-weight: 700;
+		font-size: @b-fs;
+		@media @media-size-xs {
+			padding: 7px 20px;
+		}
+		@media @media-notsmart {
+			padding: 7px 45px;
+		}
+		&:hover{
+			color: @btn-color-hover;
+			background-color: @btn-bg-hover; 
+			border-color: @btn-bg-hover; 
+		}
+		&.is--form{
+			@media @media-notsmart {padding: 12px 45px;}
+		}
+		&.is--lg{
+			@media @media-notsmart {    
+				padding: 17px 60px;
+   				border-radius: 40px;
+   			}
+		}
+		&.is--navbar{
+		    font-size: 16px;
+			@media @media-device { 
+				padding: 5px 20px;
+			}
+			@media @media-screen { 
+			    padding: 10px 45px;
+			}
+		}
+		&.is--block{
+			width: 100%;
+		}
+		&.is--blue{
+			background-color: @blue;
+			border-color: @blue;
+			color: @white;
+			&:hover{
+				background-color: @green;
+				border-color: @green;
+			}
+		}
+		&.is--yellow{
+			background-color: fadeout(@white, 100%);
+			color: @b-color;
+			border-color: @yellow;
+			&:hover{
+				background-color: @yellow;
+				border-color: @yellow;
+			}
+		}		
+	}
+	&link{
+		display: inline-block;
+		outline: none;
+		background: none;
+		text-decoration: none;
+		border: 0;
+		transition: @trs-btn;
+		&.is--navbar{
+			border-bottom: 1px solid @blue;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: @b-fs - 4;//14px; 
+			line-height: @b-lh - 4; //20px;
+			letter-spacing: 1.5px;
+			&, &:focus{color: @blue;}
+			&:hover{
+				color: @blue-dark;
+				border-color: fadeout(@blue, 100%);
+			}
+		}
+	}
+	&download{
+		position: relative;
+		display: inline-block;
+		outline: none;
+		background: none;
+		text-decoration: none;
+		border: 0;
+		transition: @trs-btn;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 1.8px;
+		padding-left: 40px;		
+	}
+	&download-icon{
+		position: absolute;
+		top: 50%;
+		left: 0px;
+		transform: translateY(-50%);
+		width: 32px;
+		height: 32px;
+		svg{display: block;}	
+	}
+	&download-text{	
+		transition: @trs-btn;
+		.btn__download &,
+		.btn__download:focus &{
+			color: @b-color-a;	
+		}
+		border-bottom: 1px solid @blue;
+		.btn__download:hover &{
+			color: darken(@b-color-a, 15%);
+			border-color: fadeout(@blue, 100%);
+		}	
+	}
+}

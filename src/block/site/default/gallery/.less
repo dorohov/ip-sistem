@@ -1,0 +1,23 @@
+.gallery-panel__{	
+	&block{		
+		&.is--catalog{padding-top: 20px;}
+		&.is--text{
+			padding-top: 40px;
+			@media @media-device {padding-top: 20px;}
+		}
+	}
+	&cols{
+		&.is--cols-4{
+			@media @media-size-xs {
+				.makeCols(6, 12);
+			}
+			@media @media-size-xxxs {
+				.makeCols(12, 12);
+			}
+		}
+	}
+	&item{
+		display: block; 
+		//box-shadow: 8px 13.856px 21px 0px rgba(0, 0, 0, 0.13);
+	} 
+}

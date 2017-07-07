@@ -1,0 +1,70 @@
+.contacts-block__{
+	&panel{}
+	&block{
+		@media @media-size-xs-p {height: 300px;}
+		@media @media-size-xs-l{height: 200px;}
+		@media @media-size-sm {height: 500px;}
+		@media @media-size-md {
+			height: ~"calc(100vh - @{navbar-top-device} - @{footer-screen})";
+		}
+		@media @media-screen-lg {
+			
+		}
+		@media @media-size-xxl {
+			height: ~"calc(100vh - @{navbar-top-screen} - @{footer-screen})";
+		}
+	}	
+	&map-container{
+		position: relative;
+		background-color: fadeout(@white, 0%);
+		width: 270px;
+		padding: 25px 0px;
+		transform: translate(20%,-75%);
+	}
+	&map-layout{
+		color: @blue-dark;
+		position: relative;
+		z-index: 2;
+		//font-weight: 700;
+		display: block;
+		padding-left: 20px;
+		//font-size: @b-fs + 6;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(-100%, -50%);
+			border-right: 13px solid fadeout(@white, 0%);
+			border-top: 13px solid fadeout(@white, 100%);
+			border-bottom: 13px solid fadeout(@white, 100%);
+		}	
+		&.is--small{
+			font-size: @b-fs;
+			padding-left: 30px;
+		}
+		a[href^="tel:"]{
+			&, &:hover, &:focus{
+				color: @blue-dark;
+			}
+		}
+	}
+	&map-address{
+		margin-bottom: 10px;
+	}
+	&map-icon{
+		position: absolute;
+		z-index: 1;
+		width: 76px;
+		height: 76px;
+		top: 50%;
+		left: 0;
+		transform: translate(-120%,-50%);
+		svg{display: block;}	
+		color: #f71b3d;
+		&.is--small{
+			width: 44px;
+			height: 44px;
+		}
+	}
+}
