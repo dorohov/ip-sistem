@@ -32,6 +32,15 @@
 		&.is--navbar{
 			&, &:hover, &:focus{color: @navbar-color;}
 		}
+		&.is--address{
+			color: @blue-dark;
+			font-weight: 400;
+			font-size: @b-fs - 4;
+			@media @media-screen-lg {				
+				.calcFontSize(16, 20, 1200, 1680);
+			//font-size: @b-fs - 4;
+			}
+		}
 	}
 	&icon{
 		width: @soc-size; 

@@ -1,0 +1,71 @@
+<div class="content-block {{block_prefix}}block  is--grey" role="main">	
+	<div class="container content-block__container">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading-products.html" 
+			header_prefix="page-header__" 
+			header_mod="is--heading  is--center  is--products"
+			header_level="h1"
+			header="Видеонаблюдение"
+		]]
+		<ul class="{{block_prefix}}nav">
+			<li>
+				<a href="#" class="is--active">Камеры</a>
+			</li>
+			<li>
+				<a href="#">Регистраторы</a>
+			</li>
+			<li>
+				<a href="#">Комплекты</a>
+			</li>
+		</ul>
+		<div class="{{block_prefix}}panel">
+			<div class="row {{block_prefix}}row  is--wrap  is--gutter">
+				<div class="cols {{block_prefix}}cols  is--cols-4">
+					[[azbntple 
+						tpl="/src/block/site/page/products/card.html"
+						block_prefix="products-item__"
+						block_link="{{page.products_item}}"  
+						block_mod="is--card"
+						block_preview="product-item1-475x355.jpg"
+						block_heading="Камера Hikvision"
+						block_article="DS-2CE16D7T-IT (6 MM)"
+						block_qty="10"
+						block_order="3 дня"
+						block_cost="9 000"
+					]]	
+				</div> 
+				<div class="cols {{block_prefix}}cols  is--cols-4">
+					[[azbntple 
+						tpl="/src/block/site/page/products/card.html"
+						block_prefix="products-item__"
+						block_link="{{page.products_item}}"  
+						block_mod="is--card"
+						block_preview="product-item1-475x355.jpg"
+						block_heading="Камера Hikvision"
+						block_article="DS-2CE16D7T-IT (6 MM)"
+						block_qty="10"
+						block_order="3 дня"
+						block_cost="9 000"
+					]]	
+				</div> 
+				<div class="cols {{block_prefix}}cols  is--cols-4">
+					[[azbntple 
+						tpl="/src/block/site/page/products/card.html"
+						block_prefix="products-item__"
+						block_link="{{page.products_item}}"  
+						block_mod="is--card"
+						block_preview="product-item1-475x355.jpg"
+						block_heading="Камера Hikvision"
+						block_article="DS-2CE16D7T-IT (6 MM)"
+						block_qty="10"
+						block_order="3 дня"
+						block_cost="9 000"
+					]]	
+				</div> 
+			</div>
+			<div class="{{block_prefix}}btn">
+				<button type="button" class="btn__item  is--loader">Показать ещё варианты</button>
+			</div>
+		</div>
+	</div>
+</div>

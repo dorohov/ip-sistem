@@ -3,7 +3,7 @@
 		@media @media-device {margin-bottom: 20px;}
 		@media @media-screen {margin-bottom: 2.6vw;}
 		&.is--heading{
-			@media @media-screen {margin-bottom: 3.65vw;}
+			//@media @media-screen {margin-bottom: 3.65vw;}
 		}
 		&.is--line{
 			transform: translateY(-46%);
@@ -23,7 +23,13 @@
 		}
 		&.is--modals{
 			margin-bottom: 20px;
-		}		
+		}	
+		&.is--products{
+			position: relative;
+			@media @media-screen {
+				margin-bottom: 1.2vw;
+			}
+		}	
 	}
 	&heading{
 		color: @b-color;
@@ -60,6 +66,12 @@
 				padding: 0 40px;
 			}
 		}	
+		&.is--products{
+			position: relative;
+			@media @media-screen {
+				padding: 0 90px;
+			}
+		}
 		&.is--line{
 			&::before{
 				content: '';
@@ -67,7 +79,7 @@
 				z-index: 1;
 				top: ~"calc(50% - 2px)";
 				left: 0;
-				background-color: @yellow;
+				background-color: @b-color-a;
 				width: 100%;
 				height: 2px;
 			}
@@ -137,52 +149,6 @@
 			.calcLineHeight(26, 40, 320, 1680);	
 			text-align: center;
 		}
-		/*&.is--panel{		
-			font-weight: 700;
-			letter-spacing: 0;
-			//@media @media-size-xs {text-align: center;}
-			&::before{
-				@media @media-notsmart {
-					content: '';
-					position: absolute;
-					z-index: 1;
-					top: ~"calc(50% - 2px)";
-					left: 0;
-					width: 100%;
-					height: 2px;
-					background-color: @b-color;					
-				}
-			}
-			span{
-				position: relative;
-				z-index: 2;
-				@media @media-notsmart {
-					background-color: @white;
-					padding-right: 20px;	
-					display: inline-block;				
-				}
-			}
-			.calcFontSize(20, 34, 320, 1680);
-			.calcLineHeight(22, 36, 320, 1680);
-		}	
-		&.is--catalog-item{
-			font-weight: 700;
-			text-transform: uppercase;	
-			.calcFontSize(20, 34, 320, 1680);
-			.calcLineHeight(26, 40, 320, 1680);				
-			@media @media-size-xs {
-				letter-spacing: 1px;
-			}
-			@media @media-notsmart {
-				letter-spacing: 2.5px;
-			}
-		}
-		&.is--blue{
-			color: @blue; 
-			&::before{
-				background-color: @blue;				
-			}
-		}	*/
 	}
 	&heading-small{
 		.calcFontSize(16, 28, 320, 1680);
@@ -245,6 +211,37 @@
 					border-bottom: 2px dotted @green;
 				}
 			}
+		}
+	}
+	&nav{
+		list-style: none;
+		margin: 0 -5px;
+		display: flex;
+		justify-content: center;
+		padding: 20px 0 0;
+		@media @media-screen-lg {
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+		}
+	}
+	&nav-item{
+		padding: 0 5px;
+	}
+	&nav-link{
+		display: block;
+		width: 34px;
+		height: 34px;
+		padding: 5px;
+		svg{display: block;}
+		&.is--active,
+		&:hover{
+			color: @blue-dark;
+		}
+		&.is--active{
+			cursor: default;
 		}
 	}
 }

@@ -27,12 +27,19 @@
 			<div class="cols navbar__cols  is--header"> 				
 				<div class="navbar__header">
 					<div class="row navbar__row-header ">
+
+						<div class="cols navbar__cols-header  is--basket">
+							<a href="/basket.html" class="navbar__btn-basket">
+								<svg class="icon-svg icon-basket" role="img">
+	<use xlink:href="/img/svg/sprite.svg#basket"></use>
+</svg>
+								<span class="navbar__btn-icon-label">5</span>
+							</a>
+						</div>
 						<div class="cols navbar__cols-header  is--brand">
-							<!--<a class="navbar__brand" href="/"><svg class="icon-svg icon-logotip" role="img">
+							<a class="navbar__brand" href="/"><svg class="icon-svg icon-logotip" role="img">
 	<use xlink:href="/img/svg/sprite.svg#logotip"></use>
 </svg>
-							</a>-->
-							<a class="navbar__brand" href="/"><img src="/img/default/logotip.png" alt="">
 							</a>
 						</div>
 						<div class="cols navbar__cols-header  is--hamburger">
@@ -56,16 +63,19 @@
 								<ul class="navbar__nav">
 									<li class="navbar__nav-item">
 	<a href="#application" class="navbar__nav-link scrollto" data-scrollto-diff="-100">Наши возможности</a>  
+</li>		
+									<li class="navbar__nav-item">
+	<a href="/products.html" class="navbar__nav-link   " data-scrollto-diff="  ">Каталог</a>  
 </li>	
 									<li class="navbar__nav-item">
-	<a href="#services" class="navbar__nav-link scrollto" data-scrollto-diff="-100">Услуги и цены</a>  
+	<a href="#services" class="navbar__nav-link scrollto" data-scrollto-diff="-100">Услуги</a>  
 </li>	
 									<li class="navbar__nav-item">
 	<a href="#about" class="navbar__nav-link scrollto" data-scrollto-diff="-100">О нас</a>  
 </li>	
 									<li class="navbar__nav-item">
 	<a href="/works.html" class="navbar__nav-link   " data-scrollto-diff="  ">Наши работы</a>  
-</li>	
+</li>
 									<li class="navbar__nav-item">
 	<a href="#contacts" class="navbar__nav-link scrollto" data-scrollto-diff="  ">Контакты</a>  
 </li>	   
@@ -78,8 +88,16 @@
 							</div>
 							<div class="cols navbar__collapse-cols  is--btn" >
 								<div class="navbar__btn">
-									<button type="button" class="btn__item   " data-toggle="modal" data-target="#modals-call">Заказать звонок</button>
+									<button type="button" class="btn__item is--navbar-sm" data-toggle="modal" data-target="#modals-call">Заказать звонок</button>
 								</div>
+							</div>
+							<div class="cols navbar__collapse-cols  is--btn-basket" >
+								<a href="/basket.html" class="navbar__btn-basket">
+									<svg class="icon-svg icon-basket" role="img">
+	<use xlink:href="/img/svg/sprite.svg#basket"></use>
+</svg>
+									<span class="navbar__btn-icon-label">5</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -361,7 +379,12 @@
 	<div class="container footer__container">
 		<div class="row footer__row">
 			<div class="cols footer__cols  is--copyright">
-				<a href="/" class="footer__logotip"><img src="/img/default/logotip.png" alt=""></a>			
+				<!-- <a href="/" class="footer__logotip"><img src="/img/default/logotip.png" alt=""></a>			 -->
+				<a href="/" class="footer__logotip">
+					<svg class="icon-svg icon-logotip" role="img">
+	<use xlink:href="/img/svg/sprite.svg#logotip"></use>
+</svg>
+				</a>			
 			</div>
 			<div class="cols footer__cols  is--soc">
 				<div class="social__block">
@@ -387,7 +410,9 @@
 </a>
 		</div>
 		<div class="cols social__cols">
-			<div class="social__tel-block"><button type="button" class="btn__item  is--navbar" data-toggle="modal" data-target="#modals-call">Заказать звонок</button></div>
+			<div class="social__item  is--address">
+				г.&nbsp;Орёл ул.&nbsp;Гагарина, д.&nbsp;23, оф.&nbsp;19а			
+			</div>
 		</div>
 	</div>
 </div>  

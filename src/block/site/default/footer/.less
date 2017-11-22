@@ -21,11 +21,18 @@
 	}
 	&cols{
 		padding-top: 15px;
+		@media @media-screen {
+			flex-grow: 1;
+		}
 		&.is--copyright{
 			@media @media-size-xs-p {.makeCols(12, 12);}
 			@media @media-size-xs-l {.makeCols(6, 12);}
 			@media @media-size-sm {.makeCols(2, 12);}
-			@media @media-screen {.makeCols(2, 12);}
+			@media @media-screen {
+				.makeCols(2, 12);
+				max-width: 115px;
+			}
+			@media @media-size-xxl {max-width: auto;}
 		}
 		&.is--soc{
 			@media @media-size-xs-p {.makeCols(12, 12);}
@@ -84,10 +91,13 @@
 		}
 	}
 	&logotip{
-		width: 100%;
 		display: block;
-		@media @media-size-xs-p {
-			img{margin: 0 auto;}
+		@media @media-size-xs-p {margin: 0 auto;}		
+		max-width: 76px;
+		height: 66px;		
+		@media @media-screen-lg {
+			height: 76px;
+			max-width: 86px;
 		}
 	}
 	&dorohovdesign-row{

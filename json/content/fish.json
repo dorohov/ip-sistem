@@ -13,6 +13,20 @@
 		"index":"302001",
 		"address":"г.&nbsp;Орёл ул.&nbsp;Гагарина, д.&nbsp;23, оф.&nbsp;19а"
 	},
+	"page":{
+		"index":"/",
+		"products":"/products.html",
+		"products_card":"/products-card.html",
+		"products_table":"/products-table.html",
+		"products_item":"/products-item.html",
+		"works":"/works.html",
+		"faq":"/faq.html",
+		"reviews":"/reviews.html",
+		"contacts":"/contacts.html",
+		"recommendations":"/recommendations.html",
+		"basket":"/basket.html",
+		"delivery":"/delivery.html"
+	},
 	"soc":{
 		"vk":"https://vk.com/"
 	},

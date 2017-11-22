@@ -1,0 +1,79 @@
+<div class="content-block {{block_prefix}}block  is--grey" role="main">	
+	<div class="container content-block__container">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading-products.html" 
+			header_prefix="page-header__" 
+			header_mod="is--heading  is--center  is--products"
+			header_level="h1"
+			header="Видеонаблюдение"
+		]]
+		<ul class="{{block_prefix}}nav">
+			<li>
+				<a href="#" class="is--active">Камеры</a>
+			</li>
+			<li>
+				<a href="#">Регистраторы</a>
+			</li>
+			<li>
+				<a href="#">Комплекты</a>
+			</li>
+		</ul>
+		<div class="{{block_prefix}}panel">
+			<div class="table-responsive {{block_prefix}}table">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th colspan="2" class="is--desc">Наименование продукта</th>
+							<th>Количество, шт</th>
+							<th>Стоимость</th>
+						</tr>
+					</thead>
+					<tbody>
+						[[azbntple 
+							tpl="/src/block/site/page/products/card-table.html"
+							block_prefix="products-item__"
+							block_link="{{page.products_item}}"  
+							block_mod="is--table"
+							block_preview="product-item1-230x170.jpg"
+							block_heading="Камера Hikvision"
+							block_article="DS-2CE16D7T-IT (6 MM)"
+							block_qty="10"
+							block_order="3 дня"
+							block_cost="9 000"
+							filter_block="filter-qty__"
+						]]
+						[[azbntple 
+							tpl="/src/block/site/page/products/card-table.html"
+							block_prefix="products-item__"
+							block_link="{{page.products_item}}"  
+							block_mod="is--table"
+							block_preview="product-item1-230x170.jpg"
+							block_heading="Камера Hikvision"
+							block_article="DS-2CE16D7T-IT (6 MM)"
+							block_qty="10"
+							block_order="3 дня"
+							block_cost="9 000"
+							filter_block="filter-qty__"
+						]]
+						[[azbntple 
+							tpl="/src/block/site/page/products/card-table.html"
+							block_prefix="products-item__"
+							block_link="{{page.products_item}}"  
+							block_mod="is--table"
+							block_preview="product-item1-230x170.jpg"
+							block_heading="Камера Hikvision"
+							block_article="DS-2CE16D7T-IT (6 MM)"
+							block_qty="10"
+							block_order="3 дня"
+							block_cost="9 000"
+							filter_block="filter-qty__"
+						]]
+					</tbody>
+				</table>
+			</div>
+			<div class="{{block_prefix}}btn">
+				<button type="button" class="btn__item  is--loader">Показать ещё варианты</button>
+			</div>
+		</div>
+	</div>
+</div>

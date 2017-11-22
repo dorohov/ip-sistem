@@ -1,0 +1,69 @@
+<div class="{{block_prefix}}panel">
+	<div class="table-responsive {{block_prefix}}table">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th colspan="2" class="is--desc">Наименование продукта</th>
+					<th>Количество, шт</th>
+					<th>Стоимость</th>
+					<th>Убрать</th>
+				</tr>
+			</thead>
+			<tbody>
+				[[azbntple 
+					tpl="/src/block/site/page/products/card-basket.html"
+					block_prefix="products-item__"
+					block_link="{{page.products_item}}"  
+					block_parent="Видеонаблюдение"
+					block_mod="is--table"
+					block_preview="product-item1-230x170.jpg"
+					block_heading="Камера Hikvision"
+					block_article="DS-2CE16D7T-IT (6 MM)"
+					block_qty="10"
+					block_order="3 дня"
+					block_cost="9 000"
+					filter_block="filter-qty__"
+				]]
+				[[azbntple 
+					tpl="/src/block/site/page/products/card-basket.html"
+					block_prefix="products-item__"
+					block_link="{{page.products_item}}"  
+					block_parent="Видеонаблюдение" 
+					block_mod="is--table"
+					block_preview="product-item1-230x170.jpg"
+					block_heading="Камера Hikvision"
+					block_article="DS-2CE16D7T-IT (6 MM)"
+					block_qty="10"
+					block_order="3 дня"
+					block_cost="9 000"
+					filter_block="filter-qty__"
+				]]
+				[[azbntple 
+					tpl="/src/block/site/page/products/card-basket.html"
+					block_prefix="products-item__"
+					block_link="{{page.products_item}}"  
+					block_parent="Видеонаблюдение" 
+					block_mod="is--table"
+					block_preview="product-item1-230x170.jpg"
+					block_heading="Камера Hikvision"
+					block_article="DS-2CE16D7T-IT (6 MM)"
+					block_qty="10"
+					block_order="3 дня"
+					block_cost="9 000"
+					filter_block="filter-qty__"
+				]]
+			</tbody>
+		</table>
+	</div>
+	<div class="{{block_prefix}}amount-row  row  is--wrap  is--gutter">
+		<div class="{{block_prefix}}amount-cols  cols">
+			<div class="products-item__cost">
+				<span class="products-item__cost-name  is--amount">Итого:</span>
+				<span class="products-item__cost-num  is--amount  azbn7__cart__sum__value">9 000</span>
+			</div>
+		</div>
+		<div class="{{block_prefix}}amount-cols  cols">
+			<button type="button" class="btn__item  is--loader">Оформить заказ</button>
+		</div>
+	</div>
+</div>

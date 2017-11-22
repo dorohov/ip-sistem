@@ -182,3 +182,72 @@ blockquote {
 	}*/
 }
 .color--blue{color: @blue;}
+.table-responsive{
+	@media @media-size-xs {
+		border: 1px solid @blue-dark;
+	}
+}
+.table.table-bordered{
+	border: 0;
+	th, td{}
+	thead{
+		th, td{
+			text-transform: uppercase;
+			font-size: @b-fs - 4;
+			line-height: @b-lh - 8;
+			padding: 20px 10px;
+    		letter-spacing: 0.8px;
+    		border: 0;
+    		border-bottom: 4px solid @blue-dark;
+    		color: @blue-dark;
+    		text-align: center;
+    		background: @white;
+    		@media @media-screen {
+    			padding: 30px;
+    		}
+			&.is--desc{
+				text-align: left;
+			}
+		}
+	}
+	tbody{
+		th, td{
+			border: 0;
+		    vertical-align: middle;
+    		border-bottom: 1px solid @blue-dark;
+    		padding: 8px 10px;
+    		@media @media-screen {
+	    		padding: 8px 5px;
+	    	}
+			&.is--preview{
+				@media @media-notsmart {
+					padding-left: 0;
+					width: 275px;
+					min-width: 170px;
+				}
+				@media @media-size-sm {
+					width: 150px;
+					min-width: 150px;
+				}
+			}
+			&.is--cost{
+				text-align: center;
+				@media @media-notsmart {
+					width: 150px;
+				}
+			}
+			&.is--del{text-align: center;}
+			&.is--qty{
+				@media @media-size-sm {width: 150px;}
+				@media @media-screen {width: 200px;}
+			}
+		}
+		tr{
+			&:last-child{
+				th, td{
+    				border-bottom: 4px solid @blue-dark;
+				}
+			}
+		}
+	}
+}

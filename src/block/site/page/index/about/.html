@@ -14,12 +14,10 @@
 						<h5 class="{{block_prefix}}preview-heading">Поляков Михаил</h5>
 						<p>Руководитель проектов</p>
 					</div>
-					<img src="{{url-path-img}}/temp/about-item1.jpg" 
-						data-src-0="{{url-path-img}}/temp/about-item1.jpg"
-						data-src-481="{{url-path-img}}/temp/about-item1-sm.jpg" 
-						data-src-980="{{url-path-img}}/temp/about-item1.jpg" 
-						alt="" 
-					>
+					<picture>
+						<source media="(min-width: 481px) and (max-width: 979px)" srcset="{{url-path-img}}/temp/about-item1-sm.jpg">
+						<img src="{{url-path-img}}/temp/about-item1.jpg" alt="" class="img-responsive">
+					</picture>
 				</div>
 			</div>
 			<div class="cols {{block_prefix}}cols  is--cols-8">

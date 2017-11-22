@@ -1,0 +1,44 @@
+<form action="#" class="{{form_prefix}}block  {{form_mod}}"  >
+	<div class="{{form_prefix}}inner  {{form_mod}}"  >
+		<div class="row {{form_prefix}}row  is--wrap">
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--name">
+				<div class="{{form_prefix}}item">
+					<input type="text" class="{{form_prefix}}control  {{form_mod}} form-control validate[required, custom[onlyLetterSp]]  {{form_color}}" id="{{form_id}}[name]" name="f[Имя]" placeholder="Ваше имя">
+				</div>	
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--tel">
+				<div class="{{form_prefix}}item">
+					<input type="tel" class="{{form_prefix}}control  {{form_mod}} form-control validate[required,custom[phone]]  {{form_color}}" id="{{form_id}}[tel]" name="f[Номер телефона]" placeholder="Ваш номер телефона">
+				</div>	
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--email">
+				<div class="{{form_prefix}}item">
+					<input type="email" class="{{form_prefix}}control  {{form_mod}} form-control validate[required,custom[email]]  {{form_color}}" id="{{form_id}}[email]" name="f[E-mail]" placeholder="Ваш E-mail">
+				</div>	
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--code">
+				<div class="{{form_prefix}}item">
+					<input type="text" class="{{form_prefix}}control  {{form_mod}} form-control validate[required]  {{form_color}}" id="{{form_id}}[code]" name="f[Индекс]" placeholder="Индекс">
+				</div>	
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--addr">
+				<div class="{{form_prefix}}item">
+					<input type="text" class="{{form_prefix}}control  {{form_mod}} form-control validate[required]  {{form_color}}" id="{{form_id}}[addr]" name="f[Полный адрес доставки]" placeholder="Полный адрес доставки">
+				</div>	
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--agreement">
+				<div class="rect-switch {{form_prefix}}item">
+	                <input class="rect-switch__input validate[required]" id="{{form_id}}[processing]" name="f[Согласие на обработку персональных данных]" type="checkbox" checked />
+	                <label for="{{form_id}}[processing]" class="rect-switch__label"></label> 
+					<label for="{{form_id}}[processing]" class="rect-switch__text"> 
+						Я согласен на обработку <a href="/agreement.html">персональных данных</a>
+					</label>
+	            </div>	
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--btn">
+				<button type="submit" class="btn__item  is--form">{{form_btn_name}}
+				</button>
+			</div>
+		</div>	
+	</div> 
+</form>  
