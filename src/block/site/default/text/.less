@@ -192,6 +192,7 @@ blockquote {
 	th, td{}
 	thead{
 		th, td{
+			vertical-align: middle;
 			text-transform: uppercase;
 			font-size: @b-fs - 4;
 			line-height: @b-lh - 8;
@@ -207,6 +208,9 @@ blockquote {
     		}
 			&.is--desc{
 				text-align: left;
+				@media @media-notsmart {
+					min-width: 300px;
+				}
 			}
 		}
 	}
@@ -219,16 +223,21 @@ blockquote {
     		@media @media-screen {
 	    		padding: 8px 5px;
 	    	}
+			&.is--desc{
+				@media @media-notsmart {
+					min-width: 300px;
+				}
+			}
 			&.is--preview{
+				min-width: 170px;
 				@media @media-notsmart {
 					padding-left: 0;
-					width: 275px;
-					min-width: 170px;
+					width: 265px;
 				}
 				@media @media-size-sm {
 					width: 150px;
 					min-width: 150px;
-				}
+				} 
 			}
 			&.is--cost{
 				text-align: center;
@@ -240,6 +249,10 @@ blockquote {
 			&.is--qty{
 				@media @media-size-sm {width: 150px;}
 				@media @media-screen {width: 200px;}
+			}
+			&.is--btn{
+				min-width: 170px;
+				text-align: right;
 			}
 		}
 		tr{
